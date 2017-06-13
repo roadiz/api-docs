@@ -6,14 +6,17 @@ Make sure that `sami` command is available.
 
 Once you’ve cloned this project:
 
-```
+```bash
+# Make sure that our custom theme is up to date
 git submodule init;
 git submodule update;
 
 # Copy sample config
 cp config.php.sample config.php;
+
 # Edit config.php to set Roadiz project path
 nano config.php
+
 # Launch Sami generation
 sami update config.php
 
