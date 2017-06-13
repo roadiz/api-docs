@@ -1,0 +1,3 @@
+[submodule "themes/roadiz-sami-theme"]
+	path = themes/roadiz-sami-theme
+	url = https://github.com/roadiz/roadiz-sami-theme.git
