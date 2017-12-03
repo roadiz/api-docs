@@ -22,6 +22,8 @@ $iterator = Finder::create()
     ->in($dir . '/themes/DefaultTheme')
     ->in($dir . '/themes/Rozier')
     ->in($dir . '/themes/Install')
+    ->in($dir . '/vendor/roadiz/models')
+    ->in($dir . '/vendor/roadiz/documents')
 ;
 
 
