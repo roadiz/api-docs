@@ -15,20 +15,24 @@ $iterator = Finder::create()
     ->exclude('twig_cache')
     ->exclude('twig_templates')
     ->exclude('gen-src')
-    ->exclude('vendor')
+    ->exclude('logs')
+    ->exclude('samples')
     ->exclude('cache')
     ->exclude('conf')
     ->in($dir . '/src')
+    ->in($dir . '/vendor/roadiz/documents/src')
+    ->in($dir . '/vendor/roadiz/models/src')
     ->in($dir . '/themes/DefaultTheme')
     ->in($dir . '/themes/Rozier')
     ->in($dir . '/themes/Install')
-    ->in($dir . '/vendor/roadiz/models')
-    ->in($dir . '/vendor/roadiz/documents')
 ;
 
 
 $versions = GitVersionCollection::create($dir)
     ->add('master', 'master')
+    ->add('develop', 'develop')
+    ->add('v0.20', 'v0.20')
+    ->add('v0.19', 'v0.19')
 ;
 
 return new Sami($iterator, array(

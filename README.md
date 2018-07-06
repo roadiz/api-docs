@@ -7,6 +7,8 @@ Make sure that `sami.phar` command is available.
 Once you’ve cloned this project:
 
 ```bash
+curl -O http://get.sensiolabs.org/sami.phar;
+
 # Make sure that our custom theme is up to date
 git submodule init;
 git submodule update;
